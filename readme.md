@@ -173,15 +173,3 @@ Get-ChildItem -Path . -Include __pycache__ -Recurse -Force | Remove-Item -Recurs
 # Обновить зависимости
 pip install -r requirements.txt --upgrade
 ```
-
----
-
-## 📊 Масштабирование
-
-```powershell
-# Запустить 3 worker'а для параллельной обработки
-docker compose up -d --scale worker=3
-
-# Посмотреть логи всех worker'ов
-docker compose logs -f worker
-```
